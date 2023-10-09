@@ -13,4 +13,4 @@ class Unit:
         other.__health = other.__health - self.__heat
 
     def is_dead(self):
-        return self.__health < 0
+        return self.__health <= 0

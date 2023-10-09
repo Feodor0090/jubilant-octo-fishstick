@@ -8,10 +8,10 @@ if __name__ == '__main__':
     while True:
         if random.random() >= 0.5:
             u1.attack(u2)
-            print("Unit 1 attacked unit 2")
+            print(f"Unit 1 attacked unit 2 ({u2.health()} left)")
         else:
             u2.attack(u1)
-            print("Unit 2 attacked unit 1")
+            print(f"Unit 2 attacked unit 1 ({u1.health()} left)")
         if u1.is_dead():
             print("Unit 1 dead")
             break
